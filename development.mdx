@@ -1,26 +1,22 @@
 ---
-title: 'Development'
-description: 'Learn how to preview changes locally'
----
 
-<Info>
-  **Prerequisite** You should have installed Node.js (version 18.10.0 or
-  higher).
-</Info>
+## title: 'Development' description: 'Learn how to preview changes locally'
+
+&lt;Info&gt; **Prerequisite** You should have installed Node.js (version 18.10.0 or higher). &lt;/Info&gt;
 
 Step 1. Install Mintlify on your OS:
 
-<CodeGroup>
+&lt;CodeGroup&gt;
 
-```bash npm
+```bash
 npm i -g mintlify
 ```
 
-```bash yarn
+```bash
 yarn global add mintlify
 ```
 
-</CodeGroup>
+&lt;/CodeGroup&gt;
 
 Step 2. Go to the docs are located (where you can find `mint.json`) and run the following command:
 
@@ -48,51 +44,34 @@ Error: listen EADDRINUSE: address already in use :::3000
 
 Each CLI is linked to a specific version of Mintlify. Please update the CLI if your local website looks different than production.
 
-<CodeGroup>
+&lt;CodeGroup&gt;
 
-```bash npm
+```bash
 npm i -g mintlify@latest
 ```
 
-```bash yarn
+```bash
 yarn global upgrade mintlify
 ```
 
-</CodeGroup>
+&lt;/CodeGroup&gt;
 
-## Deployment
+## Deployment Test
 
-<Tip>
-  Unlimited editors available under the [Startup
-  Plan](https://mintlify.com/pricing)
-</Tip>
+&lt;Tip&gt; Unlimited editors available under the [Startup Plan](https://mintlify.com/pricing) &lt;/Tip&gt;
 
 You should see the following if the deploy successfully went through:
 
-<Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
-</Frame>
+&lt;Frame&gt; &lt;img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} /&gt; &lt;/Frame&gt;
 
 ## Troubleshooting
 
 Here's how to solve some common problems when working with the CLI.
 
-<AccordionGroup>
-  <Accordion title="Mintlify is not loading">
-    Update to Node v18. Run `mintlify install` and try again.
-  </Accordion>
-  <Accordion title="No such file or directory on Windows">
-Go to the `C:/Users/Username/.mintlify/` directory and remove the `mint`
-folder. Then Open the Git Bash in this location and run `git clone
-https://github.com/mintlify/mint.git`.
+&lt;AccordionGroup&gt; &lt;Accordion title="Mintlify is not loading"&gt; Update to Node v18. Run `mintlify install` and try again. &lt;/Accordion&gt; &lt;Accordion title="No such file or directory on Windows"&gt; Go to the `C:/Users/Username/.mintlify/` directory and remove the `mint` folder. Then Open the Git Bash in this location and run `git clone https://github.com/mintlify/mint.git`.
 
 Repeat step 3.
 
-  </Accordion>
-  <Accordion title="Getting an unknown error">
-    Try navigating to the root of your device and delete the ~/.mintlify folder.
-    Then run `mintlify dev` again.
-  </Accordion>
-</AccordionGroup>
+&lt;/Accordion&gt; &lt;Accordion title="Getting an unknown error"&gt; Try navigating to the root of your device and delete the \~/.mintlify folder. Then run `mintlify dev` again. &lt;/Accordion&gt; &lt;/AccordionGroup&gt;
 
 Curious about what changed in a CLI version? [Check out the CLI changelog.](/changelog/command-line)
